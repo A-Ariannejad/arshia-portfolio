@@ -21,7 +21,7 @@ const Home = () => {
             exit={"hidden"}
             className="h1"
           >
-            Hi Im Erfan <br /> Into{" "}
+            Hi Im Dog <br /> Into{" "}
             <span className="text-accent">Computer Engineering </span>
           </motion.h1>
           <motion.p
