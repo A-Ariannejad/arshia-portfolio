@@ -21,7 +21,7 @@ const Home = () => {
             exit={"hidden"}
             className="h1"
           >
-            Hi Im Dog <br /> Into{" "}
+            {"Hi, I'm Arshia Ariannejad"} <br /> Into{" "}
             <span className="text-accent">Computer Engineering </span>
           </motion.h1>
           <motion.p
@@ -32,7 +32,7 @@ const Home = () => {
             className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
           >
             {
-              "I'm currently working on Front end websites in university and out of it. I'm looking to collaborate with game developers. I'm currently learning Unity. Ask me about what you want. (don't tell anyone but I want to people use what I created)"
+              "I am an experienced Backend Developer specializing in Websites and Video Games. I am passionate about seeking new opportunities to expand my knowledge and create innovative projects. As a dedicated and fast learner, I thrive in dynamic environments where I can continuously learn and grow.My ultimate goal is to develop products that resonate with users and provide them with an enjoyable experience. I am driven by the desire to create something that people will love and use on a daily basis. I am open to exciting challenges and collaborations that allow me to push the boundaries of what's possible in the world of technology. If you are looking for a talented and motivated developer to join your team, I would love to connect and discuss how my skills and passion can contribute to your projects. Let's create something amazing together!"
             }
           </motion.p>
           {/* btn */}
@@ -69,7 +69,7 @@ const Home = () => {
           transition={{ duration: 1, ease: "easeInOut" }}
           exit={"hidden"}
         >
-          <Avatar></Avatar>
+          {/* <Avatar></Avatar> */}
         </motion.div>
       </div>
     </div>

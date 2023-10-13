@@ -19,7 +19,7 @@ const Work = () => {
               exit={"hidden"}
               className="h2 xl:mt-12"
             >
-              My Work <span className="text-accent">.</span>
+              My <span className="text-accent">Work</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -28,8 +28,7 @@ const Work = () => {
               exit={"hidden"}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              accusamus numquam incidunt dignissimos veritatis.
+              Due to client rights, the majority of my work is closed source, limiting my ability to freely share code. However, I have contributed to various simple, academic, and educational repositories that are open for sharing. Additionally, I have undertaken freelancing projects where I obtained the necessary authority to share my code.
             </motion.p>
           </div>
           <motion.div

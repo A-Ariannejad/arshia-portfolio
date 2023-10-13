@@ -19,7 +19,7 @@ const Services = () => {
               exit={"hidden"}
               className="h2 xl:mt-8"
             >
-              My services <span className="text-accent">.</span>
+              My <span className="text-accent">Interests</span>
             </motion.h2>
             <motion.p
               variants={fadeIn("up", 0.4)}
@@ -28,9 +28,8 @@ const Services = () => {
               exit={"hidden"}
               className="mb-4 max-w-[400px] mx-auto lg:mx-0"
             >
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Porro
-              accusamus numquam incidunt dignissimos veritatis.
-            </motion.p>
+              My focus lies in these fields, driven by the desire for self-improvement and the ultimate goal of creating meaningful experiences that people can use, play, enjoy, and cherish as they make lasting memories. By continuously honing my skills, I aim to bring innovation and excellence to my work, making a positive impact on the lives of others through the products and experiences I create.
+          </motion.p>
           </div>
           <motion.div
             variants={fadeIn("down", 0.6)}

@@ -6,15 +6,43 @@ import {
   FaCss3,
   FaJs,
   FaReact,
-  FaWordpress,
+  FaLinux,
   FaFigma,
+  FaPython,
+  FaJava,
+  FaWpforms,
+  FaUnity,
+  FaGitlab,
+  FaDocker,
 } from "react-icons/fa";
+
+import {
+  TbBrandCoinbase,
+  TbBrandCpp,
+  TbBrandCSharp,
+} from "react-icons/tb"
+
+import {
+  BsMicrosoft,
+  BsFillBootstrapFill,
+  BsGithub,
+  BsFiletypeSql,
+} from "react-icons/bs"
+
+import {
+  BiLogoPostgresql,
+} from "react-icons/bi"
 
 import {
   SiNextdotjs,
   SiFramer,
   SiAdobexd,
   SiAdobephotoshop,
+  SiAssemblyscript,
+  SiDjango,
+  SiMui,
+  SiMysql,
+  SiSqlite,
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
@@ -32,20 +60,44 @@ const aboutData = [
     title: "skills",
     info: [
       {
-        title: "Web Development",
+        title: "Programming Languages",
         icons: [
-          <FaHtml5 key={0} />,
-          <FaCss3 key={1}/>,
-          <FaJs key={2}/>,
-          <FaReact key={3}/>,
-          <SiNextdotjs key={4}/>,
-          <SiFramer key={5}/>,
-          <FaWordpress key={6}/>,
+          <TbBrandCoinbase key={0}/>,
+          <TbBrandCpp key={1}/>,
+          <TbBrandCSharp key={2}/>,
+          <FaPython key={3}/>,
+          <FaJava key={4}/>,
+          <FaJs key={5}/>,
+          <FaHtml5 key={6} />,
+          <FaCss3 key={7}/>,
+          <SiAssemblyscript key={8}/>,
         ],
       },
       {
-        title: "UI/UX Design",
-        icons: [<FaFigma key={0}/>, <SiAdobexd key={1}/>, <SiAdobephotoshop key={2}/>],
+        title: "Frameworks & Libraries",
+        icons: [
+          <SiDjango key={0} />,
+          <BsMicrosoft key={1}/>,
+          <FaWpforms key={2}/>,
+          <FaReact key={3}/>,
+          <SiMui key={4}/>,
+          <BsFillBootstrapFill key={5}/>,
+        ],
+      },
+      {
+        title: "Others",
+        icons: [
+          <FaUnity key={0} />,
+          <BsGithub key={1}/>,
+          <FaGitlab key={2}/>,
+          <BiLogoPostgresql key={3}/>,
+          <SiMysql key={4}/>,
+          <SiSqlite key={5}/>,
+          <BsFiletypeSql key={6}/>,
+          <FaDocker key={7}/>,
+          <FaLinux key={8}/>,
+          <SiAdobephotoshop key={8}/>,
+        ],
       },
     ],
   },
@@ -53,46 +105,102 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "Webby Awards - Honoree",
-        stage: "2011 - 2012",
+        title: "National Entrance Exam For Graduate Schools, Ranking among the top 0.01\% of the candidates.",
+        stage: "2018",
       },
       {
-        title: "Adobe Design Achievement Awards - Finalist",
-        stage: "2009 - 2010",
-      },
-    ],
-  },
-  {
-    title: "experience",
-    info: [
-      {
-        title: "UX/UI Designer - XYZ Company",
-        stage: "2012 - 2023",
+        title: "Winning an award for being the 3rd top student.",
+        stage: "2019",
       },
       {
-        title: "Web Developer - ABC Agency",
-        stage: "2010 - 2012",
+        title: "Winning an award for being the best team of the GameHub of IUST",
+        stage: "2022",
       },
       {
-        title: "Intern - DEF Corporation",
-        stage: "2008 - 2010",
+        title: "Contributed to the Computer Engineering Scientific Association.",
+        stage: "2022-Now",
       },
     ],
   },
   {
-    title: "credentials",
+    title: "Experiences",
     info: [
       {
-        title: "Web Development - ABC University, LA, CA",
-        stage: "2011",
+        title: "Backend (Django, Django-REST, ASP.Net) - Freelancing",
       },
       {
-        title: "Computer Science Diploma - AV Technical Institute",
-        stage: "2009",
+        title: "Frontend (JavaScript, React, MUI) - Freelancing",
       },
       {
-        title: "Certified Graphic Designer - ABC Institute, Los Angeles, CA",
-        stage: "2006",
+        title: "Backend (Django, Django-REST) - Andishe Negar Company",
+      },
+      {
+        title: "GameDesign & GameDevelop (Unity) - Turned On Digital Company",
+      },
+      {
+        title: "GameDesign & GameDevelop (Unity, Unreal Engine) - GameHub at IUST ",
+      },
+    ],
+  },
+  {
+    title: "Academic Exp",
+    info: [
+      {
+        title: "Software Engineering II TA",
+        stage: "2023",
+      },
+      {
+        title: "Software Engineering I TA",
+        stage: "2023",
+      },
+      {
+        title: "Compiler Design Principles TA",
+        stage: "2022-2023",
+      },
+      {
+        title: "Game Design & Development Head TA",
+        stage: "2022-2023",
+      },
+      {
+        title: "Algorithms Analysis TA",
+        stage: "2023",
+      },
+      {
+        title: "Digital Systems Design TA",
+        stage: "2021-2022",
+      },
+      {
+        title: "Database Design & Management",
+        stage: "2021",
+      },
+      {
+        title: "Advanced Programming Head TA",
+        stage: "2019-2021",
+      },
+      {
+        title: "Fundamental of computer programming Head TA",
+        stage: "2019-2022",
+      },
+      {
+        title: "Computer Architect TA",
+        stage: "2020",
+      },
+      {
+        title: "Logical Circuit TA",
+        stage: "2019",
+      },
+    ],
+  },
+  {
+    title: "Educations",
+    info: [
+      {
+        title: "Iran University of Science and Technology",
+        stage: "2023",
+      },
+      {
+        title: "Seyed Al Shohada High School",
+        stage: "2018",
       },
     ],
   },
@@ -110,7 +218,7 @@ const About = () => {
         exit={"hidden"}
         className="hidden xl:flex absolute bottom-0 -left-[370px] top-[10rem]"
       >
-        <Avatar></Avatar>
+        {/* <Avatar></Avatar> */}
       </motion.div>
       <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 sm:p-7">
         {/* text */}
@@ -121,8 +229,8 @@ const About = () => {
           animate="show"
           exit={"hidden"}
           className="h2">
-            Cptivating <span className="text-accent">stories </span> birth
-            magnificent desgins.
+            About <span className="text-accent">me </span>
+            
           </motion.h2>
           <motion.p
           variants={fadeIn("right", 0.4)}
@@ -130,7 +238,7 @@ const About = () => {
           animate="show"
           exit={"hidden"}
            className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 ">
-           {" 10 years ago, I began freelancing as a developer. Since then, I've done remote work for agencies, counsulted for startups, and      collaborated on digital products for business and consumer use."}
+           {"Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."}
           </motion.p>
           {/* counters */}
           <motion.div
@@ -143,30 +251,31 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={10} duration={5}></CountUp>+
+                  <CountUp start={0} end={3} duration={9}></CountUp>+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Years of experience</div>
               </div>
               {/* Clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={250} duration={5}></CountUp>+
+                  <CountUp start={0} end={50} duration={6}></CountUp>+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Satisfied Clients</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Finished Projects</div>
               </div>
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={250} duration={5}></CountUp>+
+                  <CountUp start={0} end={4} duration={7}></CountUp>+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Finished Projects</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">winning awards</div>
               </div>
               {/* award */}
               <div className="relative flex-1  ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={8} duration={5}></CountUp>+
+                  {/* <CountUp start={0} end={112} duration={5}></CountUp> */}
+                -
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">winning awards</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Toefl</div>
               </div>
             </div>
           </motion.div>

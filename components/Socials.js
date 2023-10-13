@@ -31,13 +31,13 @@ const Socials = () => {
       {/* <Link href={"erfan.es1381@gmail.com"} className="hover:text-accent transiotn-all duration-300">
         <HiOutlineMail />
       </Link> */}
-      <Link href={"https://github.com/er-ebrahimi"} className="hover:text-accent transiotn-all duration-300">
+      <Link href={"https://github.com/A-Ariannejad"} className="hover:text-accent transiotn-all duration-300">
         <RiGithubLine />
       </Link>
-      <Link href={"https://linkedin.com/in/linkedin.com/in/erfan-ebrahimi-46ba79220"} className="hover:text-accent transiotn-all duration-300">
+      <Link href={"https://www.linkedin.com/in/arshia-ariannejad-585475195/"} className="hover:text-accent transiotn-all duration-300">
         <RiLinkedinLine />
       </Link>
-      <Link href={"https://twitter.com/erfanesebrahimi"} className="hover:text-accent transiotn-all duration-300">
+      <Link href={"https://twitter.com/AArian193134"} className="hover:text-accent transiotn-all duration-300">
         <RiTwitterLine />
       </Link>
     </div>

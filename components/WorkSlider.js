@@ -4,7 +4,7 @@ const workSlides = {
     {
       images: [
         {
-          title: "title",
+          title: "title3",
           path: "/thumb1.jpg",
         },
         {
@@ -85,7 +85,7 @@ const WorkSlider = () => {
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2rem] 
                          ">
                           {/* title part 1 */}
-                          <div className=" delay-100 ">LIVE</div>
+                          <div className=" delay-100 ">{image.title}</div>
                           {/* title part 2 */}
                           <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 ">PROJECT</div>
                           {/* icon */}
