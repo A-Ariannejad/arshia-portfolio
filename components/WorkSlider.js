@@ -1,43 +1,53 @@
+import Link from "next/link";
+
 // data
 const workSlides = {
   slides: [
     {
       images: [
         {
-          title: "title3",
+          title: "OnlineShop-Backend",
           path: "/thumb1.jpg",
+          link: "https://github.com/A-Ariannejad/OnlineShop-Backend",
         },
         {
-          title: "title",
+          title: "OnlineShop-Frontend ",
           path: "/thumb2.jpg",
+          link: "https://github.com/A-Ariannejad/OnlineShop-Fronted",
         },
         {
-          title: "title",
+          title: "ClassManager-Backend",
           path: "/thumb3.jpg",
+          link: "https://github.com/A-Ariannejad/ClassManager-Backend",
         },
         {
-          title: "title",
+          title: "arshia-portfolio",
           path: "/thumb4.jpg",
+          link: "https://github.com/A-Ariannejad/arshia-portfolio",
         },
       ],
     },
     {
       images: [
         {
-          title: "title",
+          title: "ASPnet_mongodb",
           path: "/thumb4.jpg",
+          link: "https://github.com/A-Ariannejad/ASPnet_mongodb",
         },
         {
-          title: "title",
+          title: "P2P-Decentralized-Messenger",
           path: "/thumb1.jpg",
+          link: "https://github.com/A-Ariannejad/Peer-To-Peer-Decentralized-Messenger-",
         },
         {
-          title: "title",
+          title: "WPF-resturant",
           path: "/thumb2.jpg",
+          link: "https://github.com/A-Ariannejad/WPF-restaurant",
         },
         {
-          title: "title",
+          title: "Hexclan_Music_Website",
           path: "/thumb3.jpg",
+          link: "https://github.com/nikinezakati/HexClan_web",
         },
       ],
     },
@@ -75,6 +85,7 @@ const WorkSlider = () => {
                     key={index}
                     className="relative rounded-lg overflow-hidden flex items-center justify-center group  "
                   >
+                    <Link href={image.link} className="hover:text-accent transiotn-all duration-300">
                     <div className="flex items-center justify-center relative overflow-hidden group">
                       {/* Image */}
                       <Image src={image.path} width={500} height={330} alt="" />
@@ -85,14 +96,15 @@ const WorkSlider = () => {
                         <div className="flex items-center gap-x-2 text-[13px] tracking-[0.2rem] 
                          ">
                           {/* title part 1 */}
-                          <div className=" delay-100 ">{image.title}</div>
+                          <div className=" delay-100 text-white">{image.title}</div>
                           {/* title part 2 */}
-                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-150 ">PROJECT</div>
+                          <div className="translate-y-[500%] group-hover:translate-y-0 transition-all  duration-300 delay-150 bg-current "></div>
                           {/* icon */}
-                          <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200 "><BsArrowRight></BsArrowRight></div>
+                          <div className="text-xl translate-y-[500%] group-hover:translate-y-0 transition-all duration-300 delay-200 text-white "><BsArrowRight></BsArrowRight></div>
                         </div>
                       </div>
                     </div>
+                    </Link>
                   </div>
                 );
               })}

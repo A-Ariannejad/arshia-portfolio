@@ -9,10 +9,11 @@ const Header = () => {
         <div className="flex flex-col lg:flex-row justify-between items-center gap-y-6 py-8">
           <Link href={"/"}>
             <Image
-              src={"/logo.svg"}
+              src={"/ArshiaLogo.png"}
+              style={{margin:"150px 0 0 0"}}
               alt=""
-              height={48}
-              width={220}
+              height={75}
+              width={310}
               priority={true}
             ></Image>
             {/* <h2 className="h3 font-bold text-lg w-[220px] h-[48px]">Erfan Ebrahimi</h2> */}
