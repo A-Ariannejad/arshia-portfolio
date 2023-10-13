@@ -10,13 +10,12 @@ const Header = () => {
           <Link href={"/"}>
             <Image
               src={"/ArshiaLogo.png"}
-              style={{margin:"150px 0 0 0"}}
+              style={{margin:"0 0 0 0", zIndex:"-10"}}
               alt=""
               height={75}
-              width={310}
+              width={250}
               priority={true}
             ></Image>
-            {/* <h2 className="h3 font-bold text-lg w-[220px] h-[48px]">Erfan Ebrahimi</h2> */}
           </Link>
           <Socials></Socials>
         </div>
