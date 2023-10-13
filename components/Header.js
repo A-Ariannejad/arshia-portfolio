@@ -12,8 +12,8 @@ const Header = () => {
               src={"/ArshiaLogo.png"}
               style={{margin:"0 0 0 0", zIndex:"-10"}}
               alt=""
-              height={75}
-              width={250}
+              height={70}
+              width={70}
               priority={true}
             ></Image>
           </Link>

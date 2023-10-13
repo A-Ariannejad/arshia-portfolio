@@ -1,5 +1,4 @@
 import Image from "next/image";
-
 import ParticlesContainer from "../components/ParticlesContainer";
 import ProjectsBtn from "../components/ProjectsBtn";
 import Avatar from "../components/Avatar";
@@ -19,7 +18,7 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit={"hidden"}
-            className="h1"
+            className="lg:h1 text-xl "
           >
             {"Hi, I'm Arshia Ariannejad"} <br /> Into{" "}
             <span className="text-accent">Computer Engineering </span>
@@ -29,14 +28,17 @@ const Home = () => {
             initial="hidden"
             animate="show"
             exit={"hidden"}
-            className="max-w-sm xl:max-w-xl mx-auto xl:mx-0 mb-10 xl:mb-16"
+            className="max-w-sm xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16 max-h-52 xl:max-h-fit overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin "
+            style={{
+              
+            }}
           >
             {
               "I am an experienced Backend Developer specializing in Websites and Video Games. I am passionate about seeking new opportunities to expand my knowledge and create innovative projects. As a dedicated and fast learner, I thrive in dynamic environments where I can continuously learn and grow.My ultimate goal is to develop products that resonate with users and provide them with an enjoyable experience. I am driven by the desire to create something that people will love and use on a daily basis. I am open to exciting challenges and collaborations that allow me to push the boundaries of what's possible in the world of technology. If you are looking for a talented and motivated developer to join your team, I would love to connect and discuss how my skills and passion can contribute to your projects. Let's create something amazing together!"
             }
           </motion.p>
           {/* btn */}
-          <div className="flex justify-center xl:hidden relative">
+          <div className="flex justify-center xl:hidden relative ">
             <ProjectsBtn></ProjectsBtn>
           </div>
           <motion.div

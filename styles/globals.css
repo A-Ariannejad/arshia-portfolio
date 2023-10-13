@@ -18,6 +18,11 @@
   color: #f13024;
 }
 
+::-webkit-scrollbar-thumb {
+  /* background-color: #888; */
+  border-radius: 8px; /* Adjust the border radius to your liking */
+}
+
 @layer base {
   body {
     @apply bg-secondary overflow-hidden leading-relaxed;
