@@ -26,7 +26,7 @@ const Services = () => {
               initial="hidden"
               animate="show"
               exit={"hidden"}
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="max-w-sm xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16 xl:max-h-fit max-h-20 overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin "
             >
               My focus lies in these fields, driven by the desire for self-improvement and the ultimate goal of creating meaningful experiences that people can use, play, enjoy, and cherish as they make lasting memories. By continuously honing my skills, I aim to bring innovation and excellence to my work, making a positive impact on the lives of others through the products and experiences I create.
           </motion.p>

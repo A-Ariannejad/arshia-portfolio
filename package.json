@@ -9,6 +9,7 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mui/material": "^5.14.13",
     "@next/font": "^13.4.4",
     "framer-motion": "^10.12.16",
     "next": "13.4.3",
@@ -25,7 +26,9 @@
     "autoprefixer": "^10.4.14",
     "eslint": "8.41.0",
     "eslint-config-next": "13.4.3",
+    "file-loader": "^6.2.0",
     "postcss": "^8.4.23",
+    "raw-loader": "^4.0.2",
     "tailwindcss": "^3.3.2"
   }
 }

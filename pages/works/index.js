@@ -26,7 +26,7 @@ const Work = () => {
               initial="hidden"
               animate="show"
               exit={"hidden"}
-              className="mb-4 max-w-[400px] mx-auto lg:mx-0"
+              className="mb-4 max-w-[400px] mx-auto lg:mx-0  max-h-44 xl:max-h-fit overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin "
             >
               Due to client rights, the majority of my work is closed source, limiting my ability to freely share code. However, I have contributed to various simple, academic, and educational repositories that are open for sharing. Additionally, I have undertaken freelancing projects where I obtained the necessary authority to share my code.
             </motion.p>

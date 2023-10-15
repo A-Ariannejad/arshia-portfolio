@@ -7,9 +7,10 @@ import {
   RiPinterestLine,
   RiGithubLine,
   RiLinkedinLine,
-  RiTwitterLine
+  RiTwitterLine,
+  RiFilePaper2Fill
 } from "react-icons/ri";
-import {HiOutlineMail} from "react-icons/hi";
+
 const Socials = () => {
   return (
     <div className="flex items-center gap-x-5 text-lg">
@@ -31,6 +32,10 @@ const Socials = () => {
       {/* <Link href={"erfan.es1381@gmail.com"} className="hover:text-accent transiotn-all duration-300">
         <HiOutlineMail />
       </Link> */}
+      <Link className="text-accent" href={"https://drive.google.com/file/d/15gZqNUv6U6TL1p1URlEcO-Ntth6HdUOX/view?usp=sharing"} download>
+        {/* <RiFilePaper2Fill /> */}
+        Download my CV
+      </Link>
       <Link href={"https://github.com/A-Ariannejad"} className="hover:text-accent transiotn-all duration-300">
         <RiGithubLine />
       </Link>

@@ -143,7 +143,7 @@ const aboutData = [
     ],
   },
   {
-    title: "Academic Exp",
+    title: "Academic",
     info: [
       {
         title: "Software Engineering II TA",
@@ -237,7 +237,7 @@ const About = () => {
           initial="hidden"
           animate="show"
           exit={"hidden"}
-           className="max-w-[500px] mx-auto xl:mx-0 mb-6 xl:mb-12 px-2 xl:px-0 ">
+           className="max-w-sm xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16 max-h-24 xl:max-h-fit overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
            {"Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."}
           </motion.p>
           {/* counters */}
@@ -258,7 +258,7 @@ const About = () => {
               {/* Clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={50} duration={6}></CountUp>+
+                  <CountUp start={0} end={50} duration={9}></CountUp>+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Finished Projects</div>
               </div>
@@ -305,7 +305,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2  items-center xl:gap-y-4 xl:items-start">
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2  items-center xl:gap-y-4 xl:items-start xl:max-h-fit max-h-44 overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
