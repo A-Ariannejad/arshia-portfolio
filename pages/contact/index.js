@@ -4,48 +4,63 @@ import { BsArrowRight } from "react-icons/bs";
 
 import { motion } from "framer-motion";
 
-
 import { fadeIn } from "../../variants";
 
 const Contact = () => {
+  const [sent, setSent] = React.useState(false);
   const [info, setInfo] = React.useState({
-    name:"",
-    email:"",
+    name: "",
+    email: "",
     subject: "",
-    text:"",
-  })
-   const handleChange = (event)=> {
-    const {name, value} = event.target;
-    setInfo(prevInfo => {
+    text: "",
+  });
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setInfo((prevInfo) => {
       return {
         ...prevInfo,
-        [name]: value
-      }
-    })
-    console.log(info)
-  }
+        [name]: value,
+      };
+    });
+    console.log(info);
+  };
   async function handleSubmit(event) {
     event.preventDefault();
-    const formData = new FormData(event.target);
+    console.log("info", info);
+    if (
+      info.name != "" &&
+      info.email != "" &&
+      info.subject != "" &&
+      info.text != ""
+    ) {
+      const formData = new FormData(event.target);
 
-    formData.append("access_key", "f671bbab-bfd4-4c89-a407-45859eadc2f8");
-    formData.append("data", info)
-    const object = Object.fromEntries(formData);
-    const json = JSON.stringify(object);
+      formData.append("access_key", "f671bbab-bfd4-4c89-a407-45859eadc2f8");
+      formData.append("subject", info.subject);
+      const object = Object.fromEntries(formData);
+      const json = JSON.stringify(object);
 
-    const response = await fetch("https://api.web3forms.com/submit", {
+      const response = await fetch("https://api.web3forms.com/submit", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Accept: "application/json"
+          Accept: "application/json",
         },
-        body: json
-    });
-    const result = await response.json();
-    if (result.success) {
+        body: json,
+      });
+      const result = await response.json();
+      if (result.success) {
         console.log(result);
+      }
+      setInfo({
+        name: "",
+        email: "",
+        subject: "",
+        text: "",
+      });
+      setSent(true);
     }
-}
+  }
   return (
     <div className="h-full bg-primary/30 ">
       <div className="contianer mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -57,7 +72,8 @@ const Contact = () => {
             exit={"hidden"}
             className="h2 text-center mb-12 "
           >
-           {" Let's "}<span className="text-accent">connect.</span>
+            {" Let's "}
+            <span className="text-accent">connect.</span>
           </motion.h2>
           {/* form */}
           <motion.form
@@ -70,10 +86,31 @@ const Contact = () => {
             onSubmit={handleSubmit}
           >
             <div className="flex gap-x-6 w-full ">
-              <input name="name" type="text" placeholder="name" onChange={handleChange} className="input" />
-              <input name="email" type="text" placeholder="email" className="input" onChange={handleChange} />
+              <input
+                name="name"
+                type="text"
+                placeholder="name"
+                onChange={handleChange}
+                className="input"
+                value={info.name}
+              />
+              <input
+                name="email"
+                type="text"
+                placeholder="email"
+                className="input"
+                onChange={handleChange}
+                value={info.email}
+              />
             </div>
-            <input type="text" placeholder="subject" className="input" onChange={handleChange} name="subject" />
+            <input
+              type="text"
+              placeholder="subject"
+              className="input"
+              onChange={handleChange}
+              name="subject"
+              value={info.subject}
+            />
             <textarea
               name="text"
               id=""
@@ -82,10 +119,12 @@ const Contact = () => {
               rows="10"
               placeholder="message"
               className="textarea"
+              value={info.text}
             ></textarea>
-            <button 
-            type="submit"
-            className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group ">
+            <button
+              type="submit"
+              className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group "
+            >
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 {"Let's "}talk
               </span>
@@ -94,6 +133,18 @@ const Contact = () => {
               </BsArrowRight>
             </button>
           </motion.form>
+          {sent && (
+            <motion.div
+              variants={fadeIn("tween", 0.4)}
+              initial="hidden"
+              animate="show"
+              exit={"hidden"}
+              action=""
+              className="h-10 w-full mt-3 bg-secondary rounded-sm flex justify-center items-center"
+            >
+              Your message sent
+            </motion.div>
+          )}
         </div>
       </div>
     </div>
