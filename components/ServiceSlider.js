@@ -52,7 +52,7 @@ const serviceData = [
   },
   {
     icon: <IoGameController />,
-    title: "Game Development & Development",
+    title: "Game Design & Development",
     description: "Creating interactive experiences through creative conceptualization, design, and technical implementation.",
   },
   {
