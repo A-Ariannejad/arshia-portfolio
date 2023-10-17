@@ -1,5 +1,5 @@
 import Circles from "/components/Circles";
-
+import React from "react";
 import { BsArrowRight } from "react-icons/bs";
 
 import { motion } from "framer-motion";
@@ -8,6 +8,44 @@ import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
 
 const Contact = () => {
+  const [info, setInfo] = React.useState({
+    name:"",
+    email:"",
+    subject: "",
+    text:"",
+  })
+   const handleChange = (event)=> {
+    const {name, value} = event.target;
+    setInfo(prevInfo => {
+      return {
+        ...prevInfo,
+        [name]: value
+      }
+    })
+    console.log(info)
+  }
+  async function handleSubmit(event) {
+    event.preventDefault();
+    const formData = new FormData(event.target);
+
+    formData.append("access_key", "f671bbab-bfd4-4c89-a407-45859eadc2f8");
+    formData.append("data", info)
+    const object = Object.fromEntries(formData);
+    const json = JSON.stringify(object);
+
+    const response = await fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          Accept: "application/json"
+        },
+        body: json
+    });
+    const result = await response.json();
+    if (result.success) {
+        console.log(result);
+    }
+}
   return (
     <div className="h-full bg-primary/30 ">
       <div className="contianer mx-auto py-32 text-center xl:text-left flex items-center justify-center h-full">
@@ -29,21 +67,24 @@ const Contact = () => {
             exit={"hidden"}
             action=""
             className="flex-1 flex flex-col gap-6 w-full mx-auto  "
+            onSubmit={handleSubmit}
           >
             <div className="flex gap-x-6 w-full ">
-              <input type="text" placeholder="name" className="input" />
-              <input type="text" placeholder="email" className="input" />
+              <input name="name" type="text" placeholder="name" onChange={handleChange} className="input" />
+              <input name="email" type="text" placeholder="email" className="input" onChange={handleChange} />
             </div>
-            <input type="text" placeholder="subject" className="input" />
+            <input type="text" placeholder="subject" className="input" onChange={handleChange} name="subject" />
             <textarea
-              name=""
+              name="text"
               id=""
+              onChange={handleChange}
               cols="30"
               rows="10"
               placeholder="message"
               className="textarea"
             ></textarea>
             <button 
+            type="submit"
             className="btn rounded-full border border-white/50 max-w-[170px] px-8 transition-all duration-300 flex items-center justify-center overflow-hidden hover:border-accent group ">
               <span className="group-hover:-translate-y-[120%] group-hover:opacity-0 transition-all duration-500">
                 {"Let's "}talk
