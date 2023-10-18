@@ -139,7 +139,8 @@ const aboutData = [
           "GameDesign & GameDevelop (Unity, Unreal Engine) - GameHub at IUST ",
       },
       {
-        title: "Teaching (FCP, AP, Unity, Django, etc.) - GameHub at IUST ",
+        title:
+          "Teaching (FCP, AP, Unity, Django, etc.) - Schools and Institutes ",
       },
     ],
   },
