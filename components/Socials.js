@@ -8,7 +8,7 @@ import {
   RiGithubLine,
   RiLinkedinLine,
   RiTwitterLine,
-  RiFilePaper2Fill
+  RiFilePaper2Fill,
 } from "react-icons/ri";
 
 const Socials = () => {
@@ -32,17 +32,32 @@ const Socials = () => {
       {/* <Link href={"erfan.es1381@gmail.com"} className="hover:text-accent transiotn-all duration-300">
         <HiOutlineMail />
       </Link> */}
-      <Link className="text-accent" href={"https://drive.google.com/file/d/15gZqNUv6U6TL1p1URlEcO-Ntth6HdUOX/view?usp=sharing"} download>
+      <Link
+        className="text-accent"
+        href={
+          "https://drive.google.com/file/d/1Vf5OtzPHPWryE1Nv9EjyXrcy5pspLfiR/view?usp=sharing"
+        }
+        download
+      >
         {/* <RiFilePaper2Fill /> */}
         Download my CV
       </Link>
-      <Link href={"https://github.com/A-Ariannejad"} className="hover:text-accent transiotn-all duration-300">
+      <Link
+        href={"https://github.com/A-Ariannejad"}
+        className="hover:text-accent transiotn-all duration-300"
+      >
         <RiGithubLine />
       </Link>
-      <Link href={"https://www.linkedin.com/in/arshia-ariannejad-585475195/"} className="hover:text-accent transiotn-all duration-300">
+      <Link
+        href={"https://www.linkedin.com/in/arshia-ariannejad-585475195/"}
+        className="hover:text-accent transiotn-all duration-300"
+      >
         <RiLinkedinLine />
       </Link>
-      <Link href={"https://twitter.com/AArian193134"} className="hover:text-accent transiotn-all duration-300">
+      <Link
+        href={"https://twitter.com/AArian193134"}
+        className="hover:text-accent transiotn-all duration-300"
+      >
         <RiTwitterLine />
       </Link>
     </div>

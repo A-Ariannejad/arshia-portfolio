@@ -16,22 +16,16 @@ import {
   FaDocker,
 } from "react-icons/fa";
 
-import {
-  TbBrandCoinbase,
-  TbBrandCpp,
-  TbBrandCSharp,
-} from "react-icons/tb"
+import { TbBrandCoinbase, TbBrandCpp, TbBrandCSharp } from "react-icons/tb";
 
 import {
   BsMicrosoft,
   BsFillBootstrapFill,
   BsGithub,
   BsFiletypeSql,
-} from "react-icons/bs"
+} from "react-icons/bs";
 
-import {
-  BiLogoPostgresql,
-} from "react-icons/bi"
+import { BiLogoPostgresql } from "react-icons/bi";
 
 import {
   SiNextdotjs,
@@ -62,41 +56,41 @@ const aboutData = [
       {
         title: "Programming Languages",
         icons: [
-          <TbBrandCoinbase key={0}/>,
-          <TbBrandCpp key={1}/>,
-          <TbBrandCSharp key={2}/>,
-          <FaPython key={3}/>,
-          <FaJava key={4}/>,
-          <FaJs key={5}/>,
+          <TbBrandCoinbase key={0} />,
+          <TbBrandCpp key={1} />,
+          <TbBrandCSharp key={2} />,
+          <FaPython key={3} />,
+          <FaJava key={4} />,
+          <FaJs key={5} />,
           <FaHtml5 key={6} />,
-          <FaCss3 key={7}/>,
-          <SiAssemblyscript key={8}/>,
+          <FaCss3 key={7} />,
+          <SiAssemblyscript key={8} />,
         ],
       },
       {
         title: "Frameworks & Libraries",
         icons: [
           <SiDjango key={0} />,
-          <BsMicrosoft key={1}/>,
-          <FaWpforms key={2}/>,
-          <FaReact key={3}/>,
-          <SiMui key={4}/>,
-          <BsFillBootstrapFill key={5}/>,
+          <BsMicrosoft key={1} />,
+          <FaWpforms key={2} />,
+          <FaReact key={3} />,
+          <SiMui key={4} />,
+          <BsFillBootstrapFill key={5} />,
         ],
       },
       {
         title: "Others",
         icons: [
           <FaUnity key={0} />,
-          <BsGithub key={1}/>,
-          <FaGitlab key={2}/>,
-          <BiLogoPostgresql key={3}/>,
-          <SiMysql key={4}/>,
-          <SiSqlite key={5}/>,
-          <BsFiletypeSql key={6}/>,
-          <FaDocker key={7}/>,
-          <FaLinux key={8}/>,
-          <SiAdobephotoshop key={8}/>,
+          <BsGithub key={1} />,
+          <FaGitlab key={2} />,
+          <BiLogoPostgresql key={3} />,
+          <SiMysql key={4} />,
+          <SiSqlite key={5} />,
+          <BsFiletypeSql key={6} />,
+          <FaDocker key={7} />,
+          <FaLinux key={8} />,
+          <SiAdobephotoshop key={8} />,
         ],
       },
     ],
@@ -105,7 +99,8 @@ const aboutData = [
     title: "awards",
     info: [
       {
-        title: "National Entrance Exam For Graduate Schools, Ranking among the top 0.01\% of the candidates.",
+        title:
+          "National Entrance Exam For Graduate Schools, Ranking among the top 0.01% of the candidates.",
         stage: "2018",
       },
       {
@@ -113,11 +108,13 @@ const aboutData = [
         stage: "2019",
       },
       {
-        title: "Winning an award for being the best team of the GameHub of IUST",
+        title:
+          "Winning an award for being the best team of the GameHub of IUST",
         stage: "2022",
       },
       {
-        title: "Contributed to the Computer Engineering Scientific Association.",
+        title:
+          "Contributed to the Computer Engineering Scientific Association.",
         stage: "2022-Now",
       },
     ],
@@ -138,7 +135,11 @@ const aboutData = [
         title: "GameDesign & GameDevelop (Unity) - Turned On Digital Company",
       },
       {
-        title: "GameDesign & GameDevelop (Unity, Unreal Engine) - GameHub at IUST ",
+        title:
+          "GameDesign & GameDevelop (Unity, Unreal Engine) - GameHub at IUST ",
+      },
+      {
+        title: "Teaching (FCP, AP, Unity, Django, etc.) - GameHub at IUST ",
       },
     ],
   },
@@ -224,69 +225,81 @@ const About = () => {
         {/* text */}
         <div className="flex-1 flex flex-col justify-center">
           <motion.h2
-          variants={fadeIn("right", 0.2)}
-          initial="hidden"
-          animate="show"
-          exit={"hidden"}
-          className="h2">
+            variants={fadeIn("right", 0.2)}
+            initial="hidden"
+            animate="show"
+            exit={"hidden"}
+            className="h2"
+          >
             About <span className="text-accent">me </span>
-            
           </motion.h2>
           <motion.p
-          variants={fadeIn("right", 0.4)}
-          initial="hidden"
-          animate="show"
-          exit={"hidden"}
-           className="max-w-sm xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16 max-h-24 xl:max-h-fit overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
-           {"Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."}
+            variants={fadeIn("right", 0.4)}
+            initial="hidden"
+            animate="show"
+            exit={"hidden"}
+            className="max-w-sm xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16 max-h-24 xl:max-h-fit overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin "
+          >
+            {
+              "Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."
+            }
           </motion.p>
           {/* counters */}
           <motion.div
-          variants={fadeIn("right", 0.6)}
-          initial="hidden"
-          animate="show"
-          exit={"hidden"}
-           className="hidden md:flex md:max-w-none mx-auto xl:mx-0 mb-8">
+            variants={fadeIn("right", 0.6)}
+            initial="hidden"
+            animate="show"
+            exit={"hidden"}
+            className="hidden md:flex md:max-w-none mx-auto xl:mx-0 mb-8"
+          >
             <div className="flex flex-1 xl:gap-x-6">
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
                   <CountUp start={0} end={3} duration={9}></CountUp>+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Years of experience</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
+                  Years of experience
+                </div>
               </div>
               {/* Clients */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
                   <CountUp start={0} end={50} duration={9}></CountUp>+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Finished Projects</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
+                  Finished Projects
+                </div>
               </div>
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
                   <CountUp start={0} end={4} duration={7}></CountUp>+
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">winning awards</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
+                  winning awards
+                </div>
               </div>
               {/* award */}
               <div className="relative flex-1  ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  {/* <CountUp start={0} end={112} duration={5}></CountUp> */}
-                -
+                  {/* <CountUp start={0} end={112} duration={5}></CountUp> */}-
                 </div>
-                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">Toefl</div>
+                <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
+                  Toefl
+                </div>
               </div>
             </div>
           </motion.div>
         </div>
         {/* info */}
-        <motion.div 
-        variants={fadeIn("left", 0.4)}
-        initial="hidden"
-        animate="show"
-        exit={"hidden"}
-        className="flex flex-col w-full xl:max-w-[48%] h-[480px] ">
+        <motion.div
+          variants={fadeIn("left", 0.4)}
+          initial="hidden"
+          animate="show"
+          exit={"hidden"}
+          className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
+        >
           <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
             {aboutData.map((item, itemIndex) => {
               return (
