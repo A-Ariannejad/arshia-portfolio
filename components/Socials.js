@@ -35,7 +35,7 @@ const Socials = () => {
       <Link
         className="text-accent"
         href={
-          "https://drive.google.com/file/d/1yxgJ7bvIoQA1lqO9eDlCNUC9iHR9f8sf/view?usp=sharing"
+          "https://drive.google.com/file/d/1X6ZSye1PzQeyh-Gpl_Lnixrrvbcqdl0i/view?usp=sharing"
         }
         download
       >
