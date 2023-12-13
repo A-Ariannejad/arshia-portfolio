@@ -101,7 +101,7 @@ const aboutData = [
       {
         title:
           "National Entrance Exam For Graduate Schools, Ranking among the top 0.01% of the candidates.",
-        stage: "2018",
+        stage: "2019",
       },
       {
         title: "Winning an award for being the 3rd top student.",
