@@ -47,6 +47,7 @@ import Circles from "../../components/Circles";
 
 import { motion } from "framer-motion";
 import { fadeIn } from "../../variants";
+import SimpleBar from "simplebar-react";
 
 // counter
 import CountUp from "react-countup";
@@ -229,7 +230,7 @@ const aboutData = [
 const About = () => {
   const [index, setIndex] = useState(0);
   return (
-    <div className="h-full bg-primary/30 py-32 text-center xl:text-left ">
+    <div className="flex sm:flex-col sm:justify-between h-full bg-primary/30 py-32 text-center xl:text-left ">
       <Circles></Circles>
       <motion.div
         variants={fadeIn("right", 0.2)}
@@ -240,9 +241,9 @@ const About = () => {
       >
         {/* <Avatar></Avatar> */}
       </motion.div>
-      <div className="container mx-auto h-full flex flex-col items-center xl:flex-row gap-x-6 sm:p-7">
+      <div className=" container mx-auto h-full justify-center flex flex-col items-center xl:flex-row gap-x-6 sm:p-7">
         {/* text */}
-        <div className="flex-1 flex flex-col justify-center">
+        <div className="md:w-full h-96 md:h-auto w-11/12 flex-1 flex flex-col justify-center">
           <motion.h2
             variants={fadeIn("right", 0.2)}
             initial="hidden"
@@ -252,17 +253,19 @@ const About = () => {
           >
             About <span className="text-accent">me </span>
           </motion.h2>
-          <motion.p
+          <motion.div
             variants={fadeIn("right", 0.4)}
             initial="hidden"
             animate="show"
             exit={"hidden"}
-            className="max-w-sm xl:max-w-4xl mx-auto xl:mx-0 mb-10 xl:mb-16 max-h-24 xl:max-h-fit overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin "
+            className="md:w-full w-11/12 mx-auto xl:mx-0 mb-10 xl:mb-16 max-h-40 md:max-h-24 xl:max-h-fit overflow-hidden scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin "
           >
-            {
-              "Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."
-            }
-          </motion.p>
+            <SimpleBar className="w-full h-40 md:h-4/5">
+              {
+                "Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."
+              }
+            </SimpleBar>
+          </motion.div>
           {/* counters */}
           <motion.div
             variants={fadeIn("right", 0.6)}
@@ -319,7 +322,7 @@ const About = () => {
           exit={"hidden"}
           className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 ">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 md:overflow-hidden overflow-auto">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -337,7 +340,7 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2  items-center xl:gap-y-4 xl:items-start xl:max-h-fit max-h-44 overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
+          <div className=" py-2 xl:py-6 flex flex-col gap-y-2  items-center xl:gap-y-4 xl:items-start xl:max-h-fit max-h-60 md:max-h-44 md:overflow-hidden overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
             {aboutData[index].info.map((item, itemIndex) => {
               return (
                 <div
