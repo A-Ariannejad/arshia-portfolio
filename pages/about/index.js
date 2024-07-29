@@ -37,6 +37,9 @@ import {
   SiMui,
   SiMysql,
   SiSqlite,
+  SiFastapi,
+  SiMongodb,
+  SiElasticsearch,
 } from "react-icons/si";
 
 import Avatar from "../../components/Avatar";
@@ -71,11 +74,12 @@ const aboutData = [
         title: "Frameworks & Libraries",
         icons: [
           <SiDjango key={0} />,
-          <BsMicrosoft key={1} />,
-          <FaWpforms key={2} />,
-          <FaReact key={3} />,
-          <SiMui key={4} />,
-          <BsFillBootstrapFill key={5} />,
+          <SiFastapi key={1} />,
+          <BsMicrosoft key={2} />,
+          <FaWpforms key={3} />,
+          <FaReact key={4} />,
+          <SiMui key={5} />,
+          <BsFillBootstrapFill key={6} />,
         ],
       },
       {
@@ -88,9 +92,11 @@ const aboutData = [
           <SiMysql key={4} />,
           <SiSqlite key={5} />,
           <BsFiletypeSql key={6} />,
-          <FaDocker key={7} />,
-          <FaLinux key={8} />,
-          <SiAdobephotoshop key={8} />,
+          <SiMongodb key={7} />,
+          <SiElasticsearch key={8} />,
+          <FaDocker key={9} />,
+          <FaLinux key={10} />,
+          <SiAdobephotoshop key={11} />,
         ],
       },
     ],
@@ -110,6 +116,11 @@ const aboutData = [
       {
         title:
           "Winning an award for being the best team of the GameHub of IUST",
+        stage: "2024",
+      },
+      {
+        title:
+          "Winning an award for being the best team of the GameHub of IUST",
         stage: "2022",
       },
       {
@@ -122,6 +133,13 @@ const aboutData = [
   {
     title: "Experiences",
     info: [
+      {
+        title: "Backend (FastAPI, MongoDB, ElasticSearch) - Arman Rayan Sharif",
+      },
+      {
+        title:
+          "Backend (Unity, Blender, Virtual Reality, Django, Postgresql) - IUST",
+      },
       {
         title: "Backend (Django, Django-REST, ASP.Net) - Freelancing",
       },
@@ -275,7 +293,7 @@ const About = () => {
               {/* projects */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={4} duration={7}></CountUp>+
+                  <CountUp start={0} end={5} duration={7}></CountUp>+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
                   winning awards
