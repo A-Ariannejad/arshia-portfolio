@@ -278,7 +278,7 @@ const About = () => {
               {/* experience */}
               <div className="relative flex-1 after:w-[1px] after:h-full after:bg-white/10 after:absolute after:top-0 after:right-0 ">
                 <div className="text2xl xl:text-4xl font-extrabold text-accent">
-                  <CountUp start={0} end={3} duration={9}></CountUp>+
+                  <CountUp start={0} end={4} duration={9}></CountUp>+
                 </div>
                 <div className="text-xs uppercase tracking-[1px] leading-[1.4] max-w-[100px]  ">
                   Years of experience
