@@ -1,6 +1,7 @@
 import "../styles/globals.css";
 import Layout from "../components/Layout";
 import Transition from "../components/Transition";
+import "simplebar-react/dist/simplebar.min.css";
 
 //router
 import { useRouter } from "next/router";
@@ -14,7 +15,7 @@ function MyApp({ Component, pageProps }) {
     <Layout>
       <AnimatePresence mode="wait">
         <motion.div key={router.route} className="h-full">
-          <Transition/>
+          <Transition />
           <Component {...pageProps} />
         </motion.div>
       </AnimatePresence>
