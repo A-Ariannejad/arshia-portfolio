@@ -322,7 +322,7 @@ const About = () => {
           exit={"hidden"}
           className="flex flex-col w-full xl:max-w-[48%] h-[480px] "
         >
-          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 md:overflow-hidden overflow-auto">
+          <div className="flex gap-x-4 xl:gap-x-8 mx-auto xl:mx-0 mb-4 md:overflow-x-hidden  overflow-x-auto overflow-hidden flex-wrap">
             {aboutData.map((item, itemIndex) => {
               return (
                 <div
@@ -331,7 +331,7 @@ const About = () => {
                     (index === itemIndex
                       ? "text-accent after:w-[100%] after:bg-accent after:transition-all after:duration-300 "
                       : "after:bg-white ") +
-                    " cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]  after:absolute after:-bottom-1 after:left-0 "
+                    " cursor-pointer capitalize xl:text-lg relative after:w-8 after:h-[2px]  after:absolute after:-bottom-1 after:left-0 mb-4"
                   }
                   onClick={() => setIndex(itemIndex)}
                 >
@@ -340,29 +340,34 @@ const About = () => {
               );
             })}
           </div>
-          <div className=" py-2 xl:py-6 flex flex-col gap-y-2  items-center xl:gap-y-4 xl:items-start xl:max-h-fit max-h-60 md:max-h-44 md:overflow-hidden overflow-auto scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
-            {aboutData[index].info.map((item, itemIndex) => {
-              return (
-                <div
-                  key={itemIndex}
-                  className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
-                >
-                  <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
-                  <div className="hidden md:flex">-</div>
-                  <div>{item.stage}</div>
-                  <div className="flex gap-x-4">
-                    {item.icons?.map((icon, iconIndex) => {
-                      return (
-                        <div className="text-2xl text-white" key={iconIndex}>
-                          {icon}
-                        </div>
-                      );
-                    })}
+          <SimpleBar className="max-h-44 md:max-h-50 xl:max-h-96">
+            <div className=" py-2 xl:py-6 flex flex-col gap-y-2  items-center xl:gap-y-4 xl:items-start xl:max-h-fit   md:overflow-x-hidden  scrollbar scrollbar-thumb-[#1b1738] scrollbar-thumb-rou   scrollbar-thin ">
+              {aboutData[index].info.map((item, itemIndex) => {
+                return (
+                  <div
+                    key={itemIndex}
+                    className="flex-1 flex flex-col md:flex-row max-w-max gap-x-2 items-center text-white/60"
+                  >
+                    <div className="font-light mb-2 md:mb-0 ">{item.title}</div>
+                    <div className="hidden md:flex">-</div>
+                    <div>{item.stage}</div>
+                    <div className="flex gap-x-4 flex-wrap">
+                      {item.icons?.map((icon, iconIndex) => {
+                        return (
+                          <div
+                            className="text-2xl text-white mb-3"
+                            key={iconIndex}
+                          >
+                            {icon}
+                          </div>
+                        );
+                      })}
+                    </div>
                   </div>
-                </div>
-              );
-            })}
-          </div>
+                );
+              })}
+            </div>
+          </SimpleBar>
         </motion.div>
       </div>
     </div>
