@@ -22,11 +22,9 @@ const Contact = () => {
         [name]: value,
       };
     });
-    console.log(info);
   };
   async function handleSubmit(event) {
     event.preventDefault();
-    console.log("info", info);
     if (
       info.name != "" &&
       info.email != "" &&
@@ -50,7 +48,6 @@ const Contact = () => {
       });
       const result = await response.json();
       if (result.success) {
-        console.log(result);
       }
       setInfo({
         name: "",
