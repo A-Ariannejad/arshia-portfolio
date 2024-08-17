@@ -262,7 +262,7 @@ const About = () => {
           >
             <SimpleBar className="w-full h-40 md:h-4/5">
               {
-                "Three years ago, my journey as a freelance developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."
+                "Four years ago, my journey as a developer commenced. Since then, I have successfully undertaken remote projects for various agencies, provided consulting services for startups, and participated in the development of digital products catering to both business and consumer needs. Additionally, I have gained valuable experience as a backend developer while working with different companies, where I had the opportunity to be part of collaborative group settings and engage in team-oriented projects. These experiences have not only enhanced my skills but also provided me with insights into the dynamics and benefits of teamwork."
               }
             </SimpleBar>
           </motion.div>
